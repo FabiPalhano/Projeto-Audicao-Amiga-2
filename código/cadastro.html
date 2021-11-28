@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="js" href="JS/cadastro.js">
+    <link rel="icon" type="icon/ico" href="img/icone/icon.ico">
+</head>
+<body>
+    <div class="circle_c">
+        <div class="circle"></div>
+    </div>
+
+    <div class="page">
+        <section class="pg">
+            <img class="welcome_img" src="img/fundo/Grupo25.png" alt="boas vindas">
+            <p>Todo cidadão tem o direito de acessar conteúdos veiculados pelos meios audiovisuais em suas diversas plataformas</p>
+        </section>
+        <main class="pg">
+            <h1>Crie uma conta</h1>
+
+            <div id='msgError'></div>
+            <div id='msgSuccess'></div>
+        
+            <form action="./login.html">
+                <label id="labelNome" for="nome">
+                    <span>Nome</span>
+                    <input type="text" id="nome" name="nome">
+                </label>
+                <label id="labelSobrenome" for="Sobrenome">
+                    <span>Sobrenome</span>
+                    <input type="text" id="Sobrenome" name="Sobrenome">
+                </label>
+                <label id="labelEmail" for="email">
+                    <span>E-mail</span>
+                    <input type="email" id="email" name="email">
+                </label>
+                <label id="labelSenha" for="password">
+                    <span>Senha</span>
+                    <input type="password" id="password" name="password">
+                </label>
+                <label id="labelDtNasc">
+                    <span>Data de Nascimento:</span>
+                    <input type="date" class="form-control" id="inputData" required="">
+                </label>
+        
+                <input type="submit" value="Cadastre-se" id="button">
+                <button onlcick="cadastrar()"></button>
+            </form>
+        
+        </main>
+    </div>
+
+</body>
+</html> 
